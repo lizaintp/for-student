@@ -28,11 +28,11 @@
 
 
 # # доп
-# class Book:
-#     def __init__(self, autor, year, name):
-#         self.autor = autor
-#         self.year = year
-#         self.name = name
+class Book:
+    def __init__(self, autor, year, name):
+        self.autor = autor
+        self.year = year
+        self.name = name
 
 #     def __str__(self):
 #         return f"{self.autor}, {self.year}, {self.name}"
@@ -52,11 +52,11 @@
 #     def __ge__(self, other):
 #         return self.year >= other.year
     
-#     def __ne__(self, other):
-#         return self.year != other.year
+    def __ne__(self, other):
+        return self.year != other.year
     
-# book = Book('Пушкин', 1890, 'Залатая рыбка')
-# book2 = Book('Толстой', 1800, 'Вайна и мир')
+book = Book('Пушкин', 1890, 'Залатая рыбка')
+book2 = Book('Толстой', 1800, 'Вайна и мир')
 # print(book)
 # print(book2)
 # print(book==book2)
@@ -64,6 +64,6 @@
 # print(book<=book2)
 # print(book>book2)
 # print(book>=book2)   
-# print(book!=book2)       
+print(book!=book2)       
     
     
